@@ -29,9 +29,10 @@ const CarsPage: React.FC = () => {
     <div>
       <div className="page-header">
         <h1>Автомобили</h1>
+        <button className="refresh-btn" onClick={loadCars}>Обновить</button>
       </div>
       <div className="table-container">
-        <table>
+        <table className="data-table">
           <thead>
             <tr>
               <th>ID</th>
@@ -40,6 +41,7 @@ const CarsPage: React.FC = () => {
               <th>Марка</th>
               <th>Модель</th>
               <th>Год</th>
+              <th>Цвет</th>
               <th>Владелец</th>
               <th>Действия</th>
             </tr>
@@ -53,6 +55,7 @@ const CarsPage: React.FC = () => {
                 <td>{car.brand}</td>
                 <td>{car.model}</td>
                 <td>{car.year}</td>
+                <td>{car.color || '-'}</td>
                 <td>{car.client_full_name || '-'}</td>
                 <td>
                   <button className="delete-btn" onClick={() => handleDelete(car.id)}>Удалить</button>
