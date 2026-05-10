@@ -1,0 +1,112 @@
+# =====================================================
+# Node.js / JavaScript
+# =====================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# =====================================================
+# Backend (Node.js + TypeScript)
+# =====================================================
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/package-lock.json
+
+# TypeScript build info
+backend/*.tsbuildinfo
+
+# =====================================================
+# Frontend (React + Vite)
+# =====================================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/package-lock.json
+
+# Vite
+frontend/.vite/
+
+# =====================================================
+# IDE / Editor files
+# =====================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================================================
+# OS generated files
+# =====================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*.db
+Thumbs.db
+*.tmp
+
+# =====================================================
+# Logs
+# =====================================================
+logs/
+*.log
+*.log.*
+
+# =====================================================
+# Environment files (содержат пароли и секреты)
+# =====================================================
+.env
+.env.*
+!.env.example
+
+# =====================================================
+# Database files (если используется SQLite)
+# =====================================================
+*.sqlite
+*.sqlite3
+*.db
+
+# =====================================================
+# Backup files
+# =====================================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# =====================================================
+# Archive files
+# =====================================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =====================================================
+# Docker (если используется)
+# =====================================================
+docker-compose.override.yml
+*.dockerignore
